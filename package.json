@@ -1,0 +1,28 @@
+﻿{
+  "name": "nest-microservices-app",
+  "version": "1.0.0",
+  "description": "NestJS Microservices Application",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "build": "nest build",
+    "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
+    "start:api": "nest start api-gateway",
+    "start:auth": "nest start auth-service",
+    "start:users": "nest start users-service",
+    "start:products": "nest start products-service",
+    "dev:api": "nest start --watch api-gateway",
+    "dev:auth": "nest start --watch auth-service",
+    "dev:users": "nest start --watch users-service",
+    "dev:products": "nest start --watch products-service"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.0.0",
+    "@nestjs/schematics": "^10.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}
