@@ -1,9 +1,0 @@
-// tsconfig.base.json
-{
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@app/common": ["libs/common/src"]
-    }
-  }
-}
