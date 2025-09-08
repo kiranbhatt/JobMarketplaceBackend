@@ -7,7 +7,6 @@
   "license": "UNLICENSED",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && nest build",
     "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
     "// ---------- Build App ----------": "",
     "build:auth": "nest build auth",
