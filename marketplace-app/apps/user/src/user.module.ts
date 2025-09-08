@@ -9,7 +9,7 @@ import { User, UserSchema } from './schemas/user.schema';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: ['.env', 'apps/user/.env'], // Adjust as needed
+      envFilePath: ['.env', 'apps/user/user.env'], // Adjust as needed
     }),
 
     MongooseModule.forRootAsync({
@@ -22,7 +22,7 @@ import { User, UserSchema } from './schemas/user.schema';
 
         // ✅ Proper logging after env has been loaded
         console.log('✅ Loaded MONGO_URI_USER from .env:', mongoUri);
-        console.log('Dot env : ', process.env.MONGO_URI_USER);
+        console.log('Dot env : ', process.env.TEST_ENV_LOAD);
 
         return {
           uri: mongoUri,
