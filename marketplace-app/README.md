@@ -114,3 +114,7 @@ JobMarketplaceBackend\marketplace-app -> npm run start auth
 # Run All
 
 JobMarketplaceBackend\marketplace-app -> npm run start:all
+
+# Inside auth 
+
+npm install passport passport-google-oauth20 @nestjs/passport @types/passport-google-oauth20
